@@ -1,0 +1,27 @@
+* {
+    margin : none;
+}
+nav{
+    display : flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+ul{
+    display : flex;
+    list-style: none;
+    justify-content: space-between;
+    gap : 20px;
+}
+button{
+    color : white;
+    font-weight: bold;
+    background-color: rgba(50, 50, 213, 0.811);
+    text-align: center;
+    height: 2.3rem;
+    width: 140px;
+    border-radius: 11px;
+}
+.hero-section{
+    background-image: url("banner.jpg");   
+}
