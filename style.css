@@ -103,11 +103,25 @@ header{
 }
 
 .pricing{
-    width:90%;
-    max-width:1200px;
-    margin:60px auto;
+    width:100%;
+    min-height: 100vh;
 }
-
+.card-container{
+    width: 95%;
+    max-width: 1100px;
+    margin : auto;
+    display : grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap : 20px;
+}
+.price-card{
+    width:300px;
+    height: 350px;
+    border : 2px solid whitesmoke;
+    padding : 5% 5%;
+    border-radius: 12px;
+    text-align: left;
+}
 .pricing h1{
     text-align:center;
     font-size:60px;
@@ -116,27 +130,9 @@ header{
 
 .subtitle{
     text-align:center;
-    color:#666;
+    color:#817f7f;
     margin:15px 0 50px;
 }
-
-.card-container{
-    display:flex;
-    justify-content:center;
-    align-items : center;
-    gap:25px;
-    flex-wrap:wrap;
-}
-
-.card{
-    width:350px;
-    height: 400px;
-    background:#fff;
-    border:1px solid #ddd;
-    border-radius:15px;
-    padding:28px;
-}
-
 .card small{
     color:#666;
     font-weight:600;
@@ -148,52 +144,34 @@ header{
     margin-top:10px;
     color:#111827;
 }
-
-.price{
-    color:#777;
-    margin:8px 0 20px;
-}
-
-.card hr{
+.price-card hr{
     border:none;
     border-top:1px solid #ddd;
     margin-bottom:25px;
 }
 
-.card li{
-    list-style:none;
-    display : flex;
-    justify-content: center;
-    align-items: center;
+.price{
+    color:#777;
+    margin:8px 0 20px;
 }
-
-.card ul li{
-
-    margin:18px 0;
-    font-size:15px;
-    color:#333;
+.price-card ol {
+    text-align: left;
+    margin: 20px 0;;
 }
-
-.card-container{
-    display : flex;
-    align-items:center;
-}
-
-.card{
-    width:100%;
-    max-width:400px;
-}
-
-
+.price-card ol li{
+    list-style:disc;
+    line-height: 28px;
+}    
 .btnn{
     width:100%;
-    margin-top:20px;
     padding:14px;
     border-radius:8px;
     border:1px solid #2563eb;
     background:white;
     color:#2563eb;
     font-weight:bold;
-    cursor:pointer;
-    transition:.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
