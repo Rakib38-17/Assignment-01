@@ -1,0 +1,1 @@
+suppose you are a senior web developer, now suggest me this empty content what should exist.
